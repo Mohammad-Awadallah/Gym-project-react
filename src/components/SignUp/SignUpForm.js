@@ -26,10 +26,10 @@ const SignUpForm = () => {
     setIsLoading(true);
     if (isNewUser) {
       URL =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAdwyXMPp4v37FEY43yf_J49OnDyfoMMAA";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=";
     } else {
       URL =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAdwyXMPp4v37FEY43yf_J49OnDyfoMMAA";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=";
     }
     fetch(URL, {
       method: "POST",
