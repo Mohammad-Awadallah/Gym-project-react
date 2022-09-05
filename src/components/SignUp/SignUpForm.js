@@ -1,7 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useContext } from "react";
 import classes from "./SignUpForm.module.css";
 import { useHistory } from "react-router-dom";
+import AuthContext from "../../store/Auth-context";
+
+
 const SignUpForm = () => {
+  const authCtx = useContext(AuthContext)
   const [isNewUser, setIsNewUser] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const emailInputRef = useRef();
@@ -50,7 +54,8 @@ const SignUpForm = () => {
         }
       })
       .then((data) => {
-        history.replace("/exersice");
+        history.replace("/workout");
+        authCtx.login()
       })
       .catch((err) => {
         alert(err.message);

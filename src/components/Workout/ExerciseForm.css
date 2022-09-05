@@ -1,0 +1,16 @@
+
+.exerForm{
+    margin-left:10px;
+    
+}
+
+
+
+.exerForm>form > *{
+    margin: 0px 3px;
+}
+
+.exerForm>form > button{
+    width:100px;
+    padding:5px;
+}

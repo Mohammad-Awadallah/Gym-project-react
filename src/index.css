@@ -10,6 +10,19 @@ html {
 
 body {
   margin: 0;
-  background-color: #5fcfe0;
+  background-color: #bbe9f0;
 }
 
+ul {
+  list-style: none
+}
+button{
+  background-color:rgb(55, 55, 224);
+  color:white;
+  padding:10px;
+  border-radius: 8px;
+}
+button:hover{
+  cursor: pointer;
+  background-color:rgb(26, 26, 153);
+}

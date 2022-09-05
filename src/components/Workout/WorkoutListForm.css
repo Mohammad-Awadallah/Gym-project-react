@@ -1,0 +1,37 @@
+
+
+
+.totalForm{
+
+    width:500px;
+    height:250px;
+    margin:auto;
+}
+
+.totalForm > h1{
+   text-align: center; 
+
+}
+
+.form{
+    margin-top:50px;
+}
+.form > input{
+    margin-left: 5px;
+    margin-right:20px;
+}
+
+
+.form > button{
+    
+    margin-left: 190px;
+}
+
+
+.form > *{
+    padding:10px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    
+}
+
